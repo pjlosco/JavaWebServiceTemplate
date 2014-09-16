@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>OnlineStore</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description></description>
+    <display-name>HomePageServlet</display-name>
+    <servlet-name>HomePageServlet</servlet-name>
+    <servlet-class>servlet.HomePageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomePageServlet</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ProductListingServlet</display-name>
+    <servlet-name>ProductListingServlet</servlet-name>
+    <servlet-class>servlet.ProductListingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductListingServlet</servlet-name>
+    <url-pattern>/ProductListing</url-pattern>
+  </servlet-mapping>
+    
+  <servlet>
+    <description></description>
+    <display-name>ProductDetailServlet</display-name>
+    <servlet-name>ProductDetailServlet</servlet-name>
+    <servlet-class>servlet.ProductDetailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductDetailServlet</servlet-name>
+    <url-pattern>/ProductDetail</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>AddToShoppingCartServlet</display-name>
+    <servlet-name>AddToShoppingCartServlet</servlet-name>
+    <servlet-class>servlet.AddToShoppingCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddToShoppingCartServlet</servlet-name>
+    <url-pattern>/AddToShoppingCart</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ShowShoppingCartServlet</display-name>
+    <servlet-name>ShowShoppingCartServlet</servlet-name>
+    <servlet-class>servlet.ShowShoppingCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowShoppingCartServlet</servlet-name>
+    <url-pattern>/cart</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>RemoveFromShoppingCartServlet</display-name>
+    <servlet-name>RemoveFromShoppingCartServlet</servlet-name>
+    <servlet-class>servlet.RemoveFromShoppingCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RemoveFromShoppingCartServlet</servlet-name>
+    <url-pattern>/RemoveFromShoppingCart</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
